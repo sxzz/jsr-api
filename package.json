@@ -1,0 +1,44 @@
+{
+  "name": "jsr-api",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@8.15.4",
+  "description": "Missing API of JSR.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/sxzz/jsr-api#readme",
+  "bugs": {
+    "url": "https://github.com/sxzz/jsr-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sxzz/jsr-api.git"
+  },
+  "author": "三咲智子 Kevin Deng <sxzz@sxzz.moe>",
+  "scripts": {
+    "lint": "eslint --cache .",
+    "lint:fix": "pnpm run lint --fix",
+    "prepare": "nitropack prepare",
+    "dev": "nitropack dev",
+    "build": "nitropack build",
+    "preview": "node .output/server/index.mjs",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --cache --write ."
+  },
+  "dependencies": {
+    "h3": "^1.11.1",
+    "nitropack": "^2.9.1"
+  },
+  "devDependencies": {
+    "@sxzz/eslint-config": "^3.8.0",
+    "@sxzz/prettier-config": "^2.0.0",
+    "@types/node": "^20.11.20",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "prettier": "@sxzz/prettier-config"
+}
