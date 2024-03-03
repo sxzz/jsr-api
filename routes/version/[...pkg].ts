@@ -6,12 +6,12 @@ export default eventHandler(async (evt) => {
   const response = await getVersions(evt, pkg)
   if (response.status !== 200) {
     if (response.status === 404) {
-      return 'Package not found'
+      return { error: 'Package not found', code: response.status }
     } else {
-      return 'Unknown error'
+      return { error: 'Unknown error', code: response.status }
     }
   }
 
   const data = await response.json()
-  return Object.keys(data.versions).at(-1)
+  return { version: Object.keys(data.versions).at(-1) }
 })
