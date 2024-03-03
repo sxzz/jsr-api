@@ -20,6 +20,8 @@ Response:
 }
 ```
 
+Example: https://jsr-api.sxzz.moe/version/@luca/flag
+
 #### Errors
 
 ```json
@@ -40,6 +42,8 @@ Response:
 ```json
 ["0.0.0", "0.0.1"]
 ```
+
+Example: https://jsr-api.sxzz.moe/versions/@luca/flag
 
 #### Errors
 
