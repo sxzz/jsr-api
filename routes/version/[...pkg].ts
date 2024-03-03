@@ -1,3 +1,4 @@
+import latestSemver from 'latest-semver'
 import { getVersions } from '../../src/fetch'
 
 export default eventHandler(async (evt) => {
@@ -13,5 +14,7 @@ export default eventHandler(async (evt) => {
   }
 
   const data = await response.json()
-  return { version: data.latest || Object.keys(data.versions).at(-1) }
+  const versions = Object.keys(data.versions)
+
+  return { version: data.latest || latestSemver(versions) }
 })
