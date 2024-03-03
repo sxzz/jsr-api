@@ -13,5 +13,5 @@ export default eventHandler(async (evt) => {
   }
 
   const data = await response.json()
-  return { version: Object.keys(data.versions).at(-1) }
+  return { version: data.latest || Object.keys(data.versions).at(-1) }
 })
