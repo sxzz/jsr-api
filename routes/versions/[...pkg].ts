@@ -6,9 +6,9 @@ export default eventHandler(async (evt) => {
   const response = await getVersions(evt, pkg)
   if (response.status !== 200) {
     if (response.status === 404) {
-      return { error: 'Package not found', code: response.status }
+      return { error: 'Package not found' }
     } else {
-      return { error: 'Unknown error', code: response.status }
+      return { error: 'Unknown error' }
     }
   }
 
