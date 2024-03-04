@@ -4,18 +4,20 @@ import { getVersions } from '../../src/fetch'
 export default eventHandler(async (evt) => {
   const pkg = getRouterParam(evt, 'pkg')
 
-  const response = await getVersions(evt, pkg)
+  const response = await getVersions(evt, pkg, false)
   if (response.status !== 200) {
     if (response.status === 404) {
       return {
         schemaVersion: 1,
         isError: true,
+        label: 'jsr',
         message: 'Package not found',
       }
     } else {
       return {
         schemaVersion: 1,
         isError: true,
+        label: 'jsr',
         message: 'Unknown error',
       }
     }
@@ -25,10 +27,7 @@ export default eventHandler(async (evt) => {
   const versions = Object.keys(data.versions)
   const latest = data.latest || latestSemver(versions)
 
-  const query = getQuery(evt)
-
   return {
-    ...query,
     schemaVersion: 1,
     label: 'jsr',
     message: `v${latest}`,
