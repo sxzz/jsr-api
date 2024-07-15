@@ -35,7 +35,7 @@
     "@sxzz/prettier-config": "^2.0.2",
     "@types/node": "^20.14.10",
     "@types/semver": "^7.5.8",
-    "eslint": "^8.57.0",
+    "eslint": "^9.7.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.3"
   },
