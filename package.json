@@ -31,9 +31,9 @@
     "nitropack": "^2.9.7"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^3.16.0",
+    "@sxzz/eslint-config": "^3.16.2",
     "@sxzz/prettier-config": "^2.0.2",
-    "@types/node": "^20.14.13",
+    "@types/node": "^20.14.14",
     "@types/semver": "^7.5.8",
     "eslint": "^9.8.0",
     "prettier": "^3.3.3",
