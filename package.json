@@ -31,11 +31,11 @@
     "nitropack": "^2.9.7"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^4.1.0",
+    "@sxzz/eslint-config": "^4.1.6",
     "@sxzz/prettier-config": "^2.0.2",
-    "@types/node": "^20.16.3",
+    "@types/node": "^20.16.5",
     "@types/semver": "^7.5.8",
-    "eslint": "^9.9.1",
+    "eslint": "^9.10.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4"
   },
