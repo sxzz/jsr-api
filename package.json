@@ -26,17 +26,17 @@
     "format": "prettier --cache --write ."
   },
   "dependencies": {
-    "h3": "^1.14.0",
+    "h3": "^1.15.0",
     "latest-semver": "^4.0.0",
     "nitropack": "^2.10.4"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^5.0.0",
-    "@sxzz/prettier-config": "^2.1.1",
-    "@types/node": "^22.13.0",
+    "@sxzz/eslint-config": "^5.0.1",
+    "@sxzz/prettier-config": "^2.1.2",
+    "@types/node": "^22.13.1",
     "@types/semver": "^7.5.8",
-    "eslint": "^9.19.0",
-    "prettier": "^3.4.2",
+    "eslint": "^9.20.0",
+    "prettier": "^3.5.0",
     "typescript": "^5.7.3"
   },
   "engines": {
