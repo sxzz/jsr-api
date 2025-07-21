@@ -28,12 +28,12 @@
   "dependencies": {
     "h3": "^1.15.3",
     "latest-semver": "^4.0.0",
-    "nitropack": "^2.11.13"
+    "nitropack": "^2.12.3"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^7.0.5",
+    "@sxzz/eslint-config": "^7.0.6",
     "@sxzz/prettier-config": "^2.2.3",
-    "@types/node": "^22.16.3",
+    "@types/node": "^22.16.5",
     "@types/semver": "^7.7.0",
     "eslint": "^9.31.0",
     "prettier": "^3.6.2",
