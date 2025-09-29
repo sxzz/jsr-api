@@ -2,7 +2,7 @@
   "name": "jsr-api",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.17.0",
+  "packageManager": "pnpm@10.17.1",
   "description": "Missing API of JSR.",
   "type": "module",
   "license": "MIT",
@@ -31,7 +31,7 @@
     "nitropack": "^2.12.6"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^7.1.4",
+    "@sxzz/eslint-config": "^7.2.6",
     "@sxzz/prettier-config": "^2.2.4",
     "@types/node": "^22.18.6",
     "@types/semver": "^7.7.1",
