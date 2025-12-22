@@ -2,7 +2,7 @@
   "name": "jsr-api",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.25.0",
+  "packageManager": "pnpm@10.26.1",
   "description": "Missing API of JSR.",
   "type": "module",
   "license": "MIT",
